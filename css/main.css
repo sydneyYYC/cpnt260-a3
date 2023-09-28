@@ -1,18 +1,28 @@
-
+ body{
+  background-color: var(--background-white);
+} 
 header {
   display:grid;
   height: 100vh;
   width:100%;
-
-  grid-template-columns:  1fr 2fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(2, 1fr);
-  background-image: url(https://picsum.photos/id/53/800/200);
+  grid-template-columns:  1fr 2fr 2fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 1fr;
+  background: no-repeat center url('../images/webbanner.jpg');
+  background-size: cover;
 }
 
+/*prevents text from touching the side*/
+main {
+  margin:2rem;
+  
+}
+/*main heading , hello I'm*/
 .logoh1 {
   grid-column-start: 2;
+  grid-row-start: 2;
   justify-self:start;
   align-self:end;
+
   padding-bottom:0;
   margin-bottom:0;
   /*save for @media
@@ -20,9 +30,36 @@ header {
   */
 }
 
+/*sub heading web ... */
 .logoh6 {
+  grid-row-start: 3;
   grid-column-start:2;
   justify-self:start;
   align-self:top;
   margin-top: 0.5rem;
+
+  /* padding-left:0.5rem; */
+}
+
+button {
+z-index: 2;
+width: max-content;
+height: min-content;
+
+grid-column-start: 3;
+grid-row-start: 2;
+align-self:center;
+justify-self: center;
+
+padding:1rem;
+border-radius: 15em;
+border: 0;
+max-width:40ch;
+
+background-color: var(--candy-blue);
+color: var(--background-white);
+}
+
+.cta-button:hover {
+  background-color: var(--pumpkin-orange);
 }
