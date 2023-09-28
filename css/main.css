@@ -1,20 +1,28 @@
 
-header{
+header {
   display:grid;
   height: 100vh;
   width:100%;
+
+  grid-template-columns:  1fr 2fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
   background-image: url(https://picsum.photos/id/53/800/200);
 }
 
-h1 {
-  font-family:'Montserrat', Arial, Helvetica, sans-serif;
-  
+.logoh1 {
+  grid-column-start: 2;
+  justify-self:start;
+  align-self:end;
+  padding-bottom:0;
+  margin-bottom:0;
+  /*save for @media
+  width:min-content;
+  */
 }
 
-h6 {
-  font-family:'Montserrat', Arial, Helvetica, sans-serif;
-}
-
-p {
-  font-family:'Cabin' , sans-serif
+.logoh6 {
+  grid-column-start:2;
+  justify-self:start;
+  align-self:top;
+  margin-top: 0.5rem;
 }
