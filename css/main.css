@@ -37,12 +37,9 @@ main {
   justify-self:start;
   align-self:top;
   margin-top: 0.5rem;
-
-  /* padding-left:0.5rem; */
 }
 
-button {
-z-index: 2;
+.cta-button {
 width: max-content;
 height: min-content;
 
@@ -61,5 +58,49 @@ color: var(--background-white);
 }
 
 .cta-button:hover {
-  background-color: var(--pumpkin-orange);
+  /*idk why this isnt working*/
+  background-color: hsl(var(--candy-blue), 48%, 65%);
+  color: var(--pumpkin-orange);
+  border-color: var(--candy-blue);
+  border:2px;
 }
+
+@media screen and (width < 55rem ) {
+  header {
+    display: grid;
+  }
+  h1{
+    font-size: 2rem;
+  }
+  .cta-button {
+    grid-column-start:2;
+    justify-self:start;
+    align-self: start;
+    grid-row-start: 3;
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (width < 600px) {
+  header{
+  display:grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  background: no-repeat center url('../images/webbanner-short.jpg');
+  background-size: cover;
+
+  }
+
+  h1{
+    font-size:2rem;
+    font-weight: 600;
+  }
+
+  h6 {
+    align-self: start;
+  }
+  .cta-button{
+    width:10rem;
+    grid-row-start:3;
+  }
+}
+
