@@ -4,39 +4,41 @@
 header {
   display:grid;
   height: 100vh;
-  width:100%;
+  width: 100%;
+
   grid-template-columns:  1fr 2fr 2fr 1fr;
   grid-template-rows: 0.5fr 0.5fr 1fr;
+  
   background: no-repeat center url('../images/webbanner-long.jpg');
   background-size: cover;
-  filter:drop-shadow(0px 8px 4px hsl(351, 8%, 60%, 0.2)); 
+  filter: drop-shadow(0px 8px 4px hsl(351, 8%, 60%, 0.2)); 
 }
 
 /*prevents text from touching the side*/
 main {
-  margin:2rem;
+  margin: 2rem;
   
 }
 /*main heading , hello I'm*/
 .logoh1 {
   grid-column-start: 2;
   grid-row-start: 2;
-  justify-self:start;
-  align-self:end;
+  justify-self: start;
+  align-self: end;
 
   padding-bottom:0;
   margin-bottom:0;
-  /*save for @media
-  width:min-content;
-  */
+
 }
 
 /*sub heading web ... */
 .logoh6 {
   grid-row-start: 3;
-  grid-column-start:2;
-  justify-self:start;
-  align-self:top;
+  grid-column-start: 2;
+
+  justify-self: start;
+  align-self: start;
+
   margin-top: 0.5rem;
 }
 
@@ -46,14 +48,14 @@ height: min-content;
 
 grid-column-start: 3;
 grid-row-start: 2;
-align-self:center;
+align-self: center;
 justify-self: center;
 
 
-padding:1rem;
+padding: 1rem;
 border-radius: 15em;
 border: 0;
-max-width:40ch;
+max-width: 40ch;
 
 background-color: var(--candy-blue);
 color: var(--background-white);
@@ -65,33 +67,38 @@ color: var(--background-white);
   color: var(--pumpkin-orange);
 }
 
+/* for tablet screens */
+
 @media screen and (width < 55rem ) {
   header {
     display: grid;
   }
+
   h1{
     font-size: 2rem;
   }
+
   .cta-button {
-    grid-column-start:2;
-    justify-self:start;
+    grid-column-start: 2;
+    justify-self: start;
     align-self: start;
     grid-row-start: 3;
     margin-top: 5rem;
   }
 }
 
+/* for mobile */
 @media screen and (width < 600px) {
   header{
   display:grid;
   grid-template-columns: 0.5fr 2fr 0.5fr;
+
   background: no-repeat center url('../images/webbanner-short.jpg');
   background-size: cover;
-
   }
 
   h1{
-    font-size:2rem;
+    font-size: 2rem;
     font-weight: 600;
   }
 
@@ -99,8 +106,8 @@ color: var(--background-white);
     align-self: start;
   }
   .cta-button{
-    width:10rem;
-    grid-row-start:3;
+    width: 10rem;
+    grid-row-start: 3;
   }
 }
 
