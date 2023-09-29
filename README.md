@@ -1,4 +1,4 @@
 # CPNT260 Assignment 3
 ## Sydney Bruce
-## github live page
+## https://sydneyyyc.github.io/cpnt260-a3/
 ## 2023-09-29

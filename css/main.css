@@ -8,8 +8,8 @@ header {
 
   grid-template-columns:  1fr 2fr 2fr 1fr;
   grid-template-rows: 0.5fr 0.5fr 1fr;
-  
-  background: no-repeat center url('../images/webbanner-long.jpg');
+
+  background: no-repeat center url('../images/webbanner-long-white.jpg');
   background-size: cover;
   filter: drop-shadow(0px 8px 4px hsl(351, 8%, 60%, 0.2)); 
 }
@@ -93,7 +93,7 @@ color: var(--background-white);
   display:grid;
   grid-template-columns: 0.5fr 2fr 0.5fr;
 
-  background: no-repeat center url('../images/webbanner-short.jpg');
+  background: no-repeat center url('../images/webbanner-short-white.jpg');
   background-size: cover;
   }
 
