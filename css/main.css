@@ -7,8 +7,9 @@ header {
   width:100%;
   grid-template-columns:  1fr 2fr 2fr 1fr;
   grid-template-rows: 0.5fr 0.5fr 1fr;
-  background: no-repeat center url('../images/webbanner.jpg');
+  background: no-repeat center url('../images/webbanner-long.jpg');
   background-size: cover;
+  filter:drop-shadow(0px 8px 4px hsl(351, 8%, 60%, 0.2)); 
 }
 
 /*prevents text from touching the side*/
@@ -48,6 +49,7 @@ grid-row-start: 2;
 align-self:center;
 justify-self: center;
 
+
 padding:1rem;
 border-radius: 15em;
 border: 0;
@@ -58,11 +60,9 @@ color: var(--background-white);
 }
 
 .cta-button:hover {
-  /*idk why this isnt working*/
+  /*idk why this isn't working*/
   background-color: hsl(var(--candy-blue), 48%, 65%);
   color: var(--pumpkin-orange);
-  border-color: var(--candy-blue);
-  border:2px;
 }
 
 @media screen and (width < 55rem ) {
